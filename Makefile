@@ -35,3 +35,7 @@ clean: ## Clean up the project directory.
 	@find . -type d -name "__pycache__" -delete
 
 lint-format: format lint ## Format and then lint the code.
+
+env: 
+	cp .env.example .env
+
